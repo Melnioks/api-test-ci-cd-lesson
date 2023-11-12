@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "a3d93083-8c04-42e6-ac6a-13ae717938ab",
+		"_postman_id": "f510839a-4aa8-4872-b15e-90f64d7faa74",
 		"name": "API-first-collection",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "21611409-a3d93083-8c04-42e6-ac6a-13ae717938ab"
+		"_uid": "21611409-f510839a-4aa8-4872-b15e-90f64d7faa74"
 	},
 	"item": [
 		{
@@ -12,7 +12,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "c79991b4-bdce-4b18-9a39-77ebe1f90071",
+						"id": "078e5863-df52-45a0-a858-e8ccd6195d7d",
 						"exec": [
 							"pm.test(\"Status code is 201\", function () {",
 							"    pm.response.to.have.status(201);",
@@ -26,7 +26,7 @@
 					}
 				}
 			],
-			"id": "11569255-1098-48a9-9fbd-f26da43bc252",
+			"id": "ec5e3683-3af3-43d3-af37-cc979553e577",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -57,7 +57,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "d8547f39-b2ed-48b7-b64a-4b0bbda4aaaf",
+						"id": "47d8ce4f-e879-49aa-8ea8-8ff3caf3d4b1",
 						"exec": [
 							"pm.test(\"Status code is 201\", function () {",
 							"    pm.response.to.have.status(201);",
@@ -71,7 +71,7 @@
 					}
 				}
 			],
-			"id": "56d0ad92-c647-4671-8f60-7aa4e1b1d6f4",
+			"id": "a7fea4a1-c403-408d-b19d-a60bc7b8e9a6",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
