@@ -1,0 +1,228 @@
+{
+	"info": {
+		"_postman_id": "a3d93083-8c04-42e6-ac6a-13ae717938ab",
+		"name": "API-first-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "21611409-a3d93083-8c04-42e6-ac6a-13ae717938ab"
+	},
+	"item": [
+		{
+			"name": "Create user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c79991b4-bdce-4b18-9a39-77ebe1f90071",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});",
+							"",
+							"pm.test(\"Body matches string \\\"Created\\\"\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"Created\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "11569255-1098-48a9-9fbd-f26da43bc252",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"test321\",\"password\":\"test\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}register",
+					"host": [
+						"{{baseUrl}}register"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "0d83ddd3-362a-46f3-8ad6-e99912b7ccf1",
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"test456\",\"password\":\"test\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "7"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7-rM9AyJuqT6iOan/xHh+AW+7K/T8\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 02 Nov 2023 14:57:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Created"
+				}
+			]
+		},
+		{
+			"name": "Create existing user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d8547f39-b2ed-48b7-b64a-4b0bbda4aaaf",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});",
+							"",
+							"pm.test(\"Body matches string \\\"Created\\\"\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"Created\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "56d0ad92-c647-4671-8f60-7aa4e1b1d6f4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"test321\",\"password\":\"test\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}register",
+					"host": [
+						"{{baseUrl}}register"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "d4a09a96-9399-44b0-b200-02825e17b134",
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"test456\",\"password\":\"test\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "7"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7-rM9AyJuqT6iOan/xHh+AW+7K/T8\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 02 Nov 2023 14:57:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Created"
+				}
+			]
+		}
+	]
+}
